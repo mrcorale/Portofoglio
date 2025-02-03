@@ -12201,7 +12201,7 @@ pre .code {
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
-    width: calc(400px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+/*  width: calc(400px + (15 - 13) * ((100vw - 300px) / (1300 - 300))); */
   }
 
   .about-img-holder {
