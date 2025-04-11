@@ -53,6 +53,7 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
+  touch-action: pan-y;
 }
 
 body {
@@ -569,6 +570,37 @@ pre code {
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+  }
+}
+
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  body {
+    touch-action: pan-y;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+  
+  img, .portfolio-card-img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Permite interactiunea pe elementele clickable */
+  a, button, .btn, .portfolio-card, .service-card, .pricing-card {
+    touch-action: manipulation;
+    pointer-events: auto;
   }
 }
 
@@ -11374,8 +11406,8 @@ p {
 }
 
 .testimonial-card-img-holder {
-  min-width: 45px;
-  max-width: 45px;
+  min-width: 55px;
+  max-width: 75px;
   z-index: 999;
 }
 
@@ -11383,7 +11415,7 @@ p {
   background: #fff;
   padding: 4px;
   width: 90px;
-  height: 90px;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -12201,7 +12233,7 @@ pre .code {
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
-/*  width: calc(400px + (15 - 13) * ((100vw - 300px) / (1300 - 300))); */
+    /* width: calc(400px + (15 - 13) * ((100vw - 300px) / (1300 - 300))); */
   }
 
   .about-img-holder {
