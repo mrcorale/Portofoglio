@@ -597,7 +597,6 @@ pre code {
     height: auto;
   }
   
-  /* Permite interactiunea pe elementele clickable */
   a, button, .btn, .portfolio-card, .service-card, .pricing-card {
     touch-action: manipulation;
     pointer-events: auto;
