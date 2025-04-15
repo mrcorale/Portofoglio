@@ -5650,6 +5650,14 @@ a.badge-dark:focus, a.badge-dark.focus {
   box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
 }
 
+.gold {
+  color: var(--bs-yellow);
+}
+
+.silver {
+  color: var(--bs-gray-500);
+}
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
